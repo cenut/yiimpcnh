@@ -310,7 +310,7 @@ function getAlgoPort($algo)
 		'polytimos'	=> 8463,
 		'skunk'		=> 8433,
 		'tribus'	=> 8533,
-		'tribus'	=> 9733,
+		'cryptonight'	=> 9733,
 	        'a5a'   	=> 8633,
 	);
 
