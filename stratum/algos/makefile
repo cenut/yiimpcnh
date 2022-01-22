@@ -20,6 +20,7 @@ SOURCES=lyra2re.c lyra2v2.c lyra2v3.c Lyra2.c lyra2z.c Lyra2-z.c lyra2zz.c Lyra2
 	a5a.c a5amath.c m7m.c magimath.cpp velvet.c \
 	argon2a.c blake2/blake2b.c ar2/argon2.c ar2/core.c ar2/encoding.c ar2/opt.c ar2/thread.c ar2/ar2-scrypt-jane.c \
 	hive.c pomelo.c hex.c argon2d-dyn.c \
+	cryptonight.c crypto/aesb.c crypto/c_blake256.c crypto/c_groestl.c crypto/c_jh.c crypto/c_keccak.c crypto/c_skein.c crypto/hash.c crypto/oaes_lib.c \
 	phi.c phi2.c polytimos.c rainforest.c skunk.c sib.c veltor.c gost.c aergo.c lbk3.c
 
 OBJECTS=$(SOURCES:%.c=%.o) $(SOURCES:%.cpp=%.o)
@@ -41,6 +42,7 @@ $(OUTPUT): $(OBJECTS)
 
 clean:
 	rm -f *.o
+	rm -f crypto/*.o
 	rm -f ar2/*.o
 	rm -f blake2/*.o
 	rm -f SWIFFTX/*.o

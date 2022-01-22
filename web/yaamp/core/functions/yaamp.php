@@ -77,6 +77,7 @@ function yaamp_get_algos()
 		'yescryptR16',
 		'yescryptR32',
 		'whirlpool',
+		'cryptonight',
 		'zr5',
 	);
 }
@@ -219,6 +220,7 @@ function getAlgoColors($algo)
 		'yescryptR16'	=> '#e2d0e2',
 		'yescryptR32'	=> '#e2d0d2',
 		'zr5'		=> '#d0b0d0',
+		'cryptonight'		=> '#ba25ba',
 
 		'MN'		=> '#ffffff', // MasterNode Earnings
 		'PoS'		=> '#ffffff'  // Stake
@@ -308,6 +310,7 @@ function getAlgoPort($algo)
 		'polytimos'	=> 8463,
 		'skunk'		=> 8433,
 		'tribus'	=> 8533,
+		'tribus'	=> 9733,
 	        'a5a'   	=> 8633,
 	);
 

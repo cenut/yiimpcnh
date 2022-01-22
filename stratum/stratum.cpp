@@ -167,7 +167,7 @@ YAAMP_ALGO g_algos[] =
 	{"keccak", keccak256_hash, 0x80, 0, sha256_hash_hex },
 	{"keccakc", keccak256_hash, 0x100, 0, 0},
 	{"hex", hex_hash, 0x100, 0, sha256_hash_hex },
-	
+
 	{"phi", phi_hash, 1, 0, 0},
 	{"phi2", phi2_hash, 0x100, 0, 0},
 
@@ -205,6 +205,7 @@ YAAMP_ALGO g_algos[] =
 	{"whirlcoin", whirlpool_hash, 1, 0, sha256_hash_hex }, /* old sha merkleroot */
 	{"whirlpool", whirlpool_hash, 1, 0 }, /* sha256d merkleroot */
 	{"whirlpoolx", whirlpoolx_hash, 1, 0, 0},
+	{"cryptonight", cryptonight_hash, 1, 0, 0},
 
 	{"", NULL, 0, 0},
 };
@@ -479,4 +480,3 @@ void *stratum_thread(void *p)
 		pthread_detach(thread);
 	}
 }
-
